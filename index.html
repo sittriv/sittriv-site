@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SITTRIV - SERVICIOS INTEGRALES TECNOLOGICOS</title>
+  <meta name="description" content="Servicios profesionales, científicas y técnicas N.C.P." />
+  <meta property="og:title" content="SITTRIV - SERVICIOS INTEGRALES TECNOLOGICOS" />
+  <meta property="og:description" content="Servicios profesionales, científicas y técnicas N.C.P." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">SITTRIV</a>
+    <nav aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-nosotros">Sobre nosotros</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn" href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>SITTRIV - SERVICIOS INTEGRALES TECNOLOGICOS</h1>
+      <p>Servicios profesionales, científicas y técnicas N.C.P.</p>
+      <div class="cta">
+        <a class="btn" href="#servicios">Ver servicios</a>
+        <a class="btn-outline" href="#proyectos">Portafolio</a>
+        <a class="btn-outline" href="https://wa.me/593983824669" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <ul class="chips" aria-label="Tecnologías y enfoques">
+        <li>Consultoría</li><li>Ingeniería</li><li>Automatización</li><li>Data & BI</li>
+      </ul>
+    </div>
+    <img class="hero-img" src="img/hero-placeholder.png" alt="Ilustración tecnológica genérica" />
+  </main>
+
+  <section id="servicios" class="section" aria-labelledby="servicios-title">
+    <h2 id="servicios-title">Servicios</h2>
+    <div class="grid cards">
+      <article class="card">
+        <h3>Consultoría Tecnológica</h3>
+        <p>Estrategia digital, evaluación de madurez tecnológica y hojas de ruta.</p>
+      </article>
+      <article class="card">
+        <h3>Desarrollo e Integraciones</h3>
+        <p>Web/apps, APIs y automatización de procesos con enfoque en seguridad.</p>
+      </article>
+      <article class="card">
+        <h3>Data, BI y Analítica</h3>
+        <p>Dashboards, reporting y analítica para toma de decisiones.</p>
+      </article>
+      <article class="card">
+        <h3>Soporte y Mantenimiento</h3>
+        <p>Monitoreo, optimización de rendimiento y continuidad operativa.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="proyectos" class="section alt" aria-labelledby="proyectos-title">
+    <h2 id="proyectos-title">Proyectos destacados</h2>
+    <div class="grid projects">
+      <article class="project">
+        <img src="img/project-1.png" alt="Proyecto 1" />
+        <h3>Automatización de reportes</h3>
+        <p>Pipeline sin servidor con tableros ejecutivos y alertas.</p>
+      </article>
+      <article class="project">
+        <img src="img/project-2.png" alt="Proyecto 2" />
+        <h3>Portal de servicios</h3>
+        <p>Landing ligera orientada a conversión y medición.</p>
+      </article>
+      <article class="project">
+        <img src="img/project-3.png" alt="Proyecto 3" />
+        <h3>Integración de APIs</h3>
+        <p>Sincronización segura entre sistemas internos y externos.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="sobre-nosotros" class="section" aria-labelledby="sobre-title">
+    <h2 id="sobre-title">Sobre nosotros</h2>
+    <p>Somos un equipo orientado a resultados que une experiencia técnica con enfoque de negocio para entregar soluciones simples, medibles y seguras.</p>
+    <ul class="chips">
+      <li>Proveedor confiable</li><li>Mejores prácticas</li><li>Agilidad</li><li>Seguridad</li>
+    </ul>
+  </section>
+
+  <section id="faq" class="section alt" aria-labelledby="faq-title">
+    <h2 id="faq-title">Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Cómo solicito una cotización?</summary>
+      <p>Escríbenos al correo o WhatsApp con una breve descripción y plazos. Respondemos en 24–48h hábiles.</p>
+    </details>
+    <details>
+      <summary>¿Ofrecen contrato de soporte?</summary>
+      <p>Sí, planes mensuales con SLA y métricas de calidad.</p>
+    </details>
+    <details>
+      <summary>¿Trabajan de forma remota?</summary>
+      <p>Sí. También podemos coordinar reuniones presenciales si es necesario.</p>
+    </details>
+  </section>
+
+  <section id="contacto" class="section" aria-labelledby="contacto-title">
+    <h2 id="contacto-title">Contacto</h2>
+    <div class="contact-grid">
+      <form id="contactForm" class="form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+        <label>Nombre<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Mensaje<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Enviar</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+      <div class="contact-card card">
+        <p><strong>Email:</strong> <a href="mailto:sittriv@outlook.com">sittriv@outlook.com</a></p>
+        <p><strong>Teléfono:</strong> <a href="tel:+593983824669">+593 983824669</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/593983824669" target="_blank" rel="noopener">https://wa.me/593983824669</a></p>
+        <p><strong>Redes:</strong> Próximamente</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <p>© <span id="year"></span> SITTRIV. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
