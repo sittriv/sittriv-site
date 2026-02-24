@@ -56,7 +56,8 @@ p { color: var(--muted); line-height: 1.7; }
   .hero-img { margin: 1rem auto 0; max-width: 480px; }
 }
 
-/* ===== Ajustes del header y logo SITTRIV ===== */
+
+/* ====== Header y Logo SITTRIV (versión depurada) ====== */
 .nav {
   position: sticky;
   top: 0;
@@ -71,7 +72,7 @@ p { color: var(--muted); line-height: 1.7; }
 }
 
 .brand {
-  display: inline-flex;        /* Logo + texto alineados */
+  display: inline-flex;
   align-items: center;
   gap: .6rem;
   text-decoration: none;
@@ -80,52 +81,23 @@ p { color: var(--muted); line-height: 1.7; }
   letter-spacing: .4px;
 }
 
-/* El logo no debe heredar max-width:100% de la regla global */
-.logo {
-  height: 40px;                /* Tamaño del logo en desktop */
-  width: auto;                 /* Mantiene proporción */
-  max-width: none;             /* Anula la regla global para img */
-  display: inline-block;       /* Evita ocupar toda la línea */
-  border-radius: 0;            /* Evita redondeo accidental del logo */
-}
-
-/* Texto junto al logo */
-.brand-text {
-  font-weight: 800;
-  white-space: nowrap;         /* Evita salto de línea entre logo y texto */
-}
-
-/* Menú de navegación */
-.nav nav a {
-  margin-left: 1rem;
-  opacity: .9;
-}
-
-/* Responsivo: logo un poco menor en pantallas pequeñas */
-@media (max-width: 480px) {
-  .logo { height: 26px; }
-}
-
-/* ====== Fix tamaño del logo en el header ====== */
-.nav .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: .6rem;
-}
-
+/* Tamaño del logo (desktop) */
 .nav .brand .logo {
-  height: 40px;        /* tamaño del logo en desktop */
-  width: auto;         /* respeta proporción del PNG */
-  max-width: none;     /* anula img { max-width: 100% } */
+  height: 44px;      /* <--- AJUSTA AQUÍ (40/44/48/52) */
+  width: auto;
+  max-width: none;
   display: inline-block;
   border-radius: 0;
 }
 
-/* Ajuste en móvil */
-@media (max-width: 480px) {
-  .nav .brand .logo { height: 26px; }
+/* Evita que reglas globales afecten imágenes del header */
+.nav img {
+  max-width: none;
+  width: auto;
 }
 
-/* Si alguna regla pone ancho 100% a TODAS las imágenes del header */
-.nav img { max-width: none; width: auto; }
-
+/* Móvil (opcional): si quieres un poco menor, ajusta aquí. 
+   Si NO quieres que cambie en móvil, borra toda esta media query. */
+@media (max-width: 480px) {
+  .nav .brand .logo { height: 36px; }  /* antes 26px */
+}
