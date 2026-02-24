@@ -114,7 +114,7 @@ p { color: var(--muted); line-height: 1.7; }
 }
 
 .nav .brand .logo {
-  height: 32px;        /* tamaño del logo en desktop */
+  height: 40px;        /* tamaño del logo en desktop */
   width: auto;         /* respeta proporción del PNG */
   max-width: none;     /* anula img { max-width: 100% } */
   display: inline-block;
