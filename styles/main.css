@@ -82,7 +82,7 @@ p { color: var(--muted); line-height: 1.7; }
 
 /* El logo no debe heredar max-width:100% de la regla global */
 .logo {
-  height: 32px;                /* Tamaño del logo en desktop */
+  height: 40px;                /* Tamaño del logo en desktop */
   width: auto;                 /* Mantiene proporción */
   max-width: none;             /* Anula la regla global para img */
   display: inline-block;       /* Evita ocupar toda la línea */
