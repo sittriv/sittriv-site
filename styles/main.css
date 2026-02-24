@@ -83,7 +83,7 @@ p { color: var(--muted); line-height: 1.7; }
 
 /* Tamaño del logo (desktop) */
 .nav .brand .logo {
-  height: 48px;      /* <--- AJUSTA AQUÍ (40/44/48/52) */
+  height: 44px;      /* <--- AJUSTA AQUÍ (40/44/48/52) */
   width: auto;
   max-width: none;
   display: inline-block;
